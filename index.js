@@ -160,6 +160,10 @@ async function run() {
             </span>
         </nav>
         <div class="row">
+
+
+        \\
+
             <div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
                 <div class="col card-header">
                     <h4>Robert</h4>
@@ -175,59 +179,19 @@ async function run() {
                     <li class="list-group-item">Office Number: 1</li>
                 </ul>
             </div>
-            <div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
-                <div class="col card-header">
-                    <h4>Tom</h4>
-                </div>
-    
-                <div class="col card-header">
-                    <h4>Engineer</h4>
-                </div>
-    
-                <ul class="list-group list-group-flush text">
-                    <li class="list-group-item">ID: 2</li>
-                    <li class="list-group-item">Email: tomruff@gmail.com</li>
-                    <li class="list-group-item">GitHub: git/tomruff</li>
-                </ul>
-            </div>
-            <div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
-                <div class="col card-header">
-                    <h4>Blaise</h4>
-                </div>
-    
-                <div class="col card-header">
-                    <h4>Intern</h4>
-                </div>
-    
-                <ul class="list-group list-group-flush text">
-                    <li class="list-group-item">ID: 3</li>
-                    <li class="list-group-item">Email: Blaise@gmail.com</li>
-                    <li class="list-group-item">School: UofU</li>
-                </ul>
-            </div>
-            <div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
-                <div class="col card-header">
-                    <h4>Quinn</h4>
-                </div>
-    
-                <div class="col card-header">
-                    <h4>Intern</h4>
-                </div>
-    
-                <ul class="list-group list-group-flush text">
-                    <li class="list-group-item">ID: 4</li>
-                    <li class="list-group-item">Email: quinn@gmail.com</li>
-                    <li class="list-group-item">School: BYU</li>
-                </ul>
-            </div>
+
+        \\
+
+
         </div>
+
     </body>
     
-    </html>
-    <div>
-        <div>
-            <div>
-                <div>`
+    </html> 
+    
+    `;
+
+
 
     for (let i in employeeArray) {
         employee = employeeArray[i];
