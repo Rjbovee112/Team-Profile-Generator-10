@@ -116,7 +116,7 @@ async function run() {
         for (j = 0; j < maxTimes; j++) {
             html += `<div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
                 <div class="col card-header">
-                    <h4>Robert</h4>
+                    <h4>${employeeArray[j].name}</h4>
                 </div>
 
                 <div class="col card-header">
