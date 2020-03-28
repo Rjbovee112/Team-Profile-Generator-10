@@ -110,6 +110,31 @@ async function run() {
 
     // console.log(employeeArray.length);
 
+
+    function getCardHtml() {
+        let html = "";
+        for (j = 0; j < maxTimes; j++) {
+            html += `<div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
+                <div class="col card-header">
+                    <h4>Robert</h4>
+                </div>
+
+                <div class="col card-header">
+                    <h4>Manager</h4>
+                </div>
+
+                <ul class="list-group list-group-flush text">
+                    <li class="list-group-item">ID: 1</li>
+                    <li class="list-group-item">Email: rjbovee112@gmail.com</li>
+                    <li class="list-group-item">Office Number: 1</li>
+                </ul>
+            </div>`;
+        }
+        return html;
+    }
+
+
+
     let html = `<!DOCTYPE html>
     <html lang="en">
     
@@ -161,26 +186,7 @@ async function run() {
         </nav>
         <div class="row">
 
-
-        \\
-
-            <div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
-                <div class="col card-header">
-                    <h4>Robert</h4>
-                </div>
-    
-                <div class="col card-header">
-                    <h4>Manager</h4>
-                </div>
-    
-                <ul class="list-group list-group-flush text">
-                    <li class="list-group-item">ID: 1</li>
-                    <li class="list-group-item">Email: rjbovee112@gmail.com</li>
-                    <li class="list-group-item">Office Number: 1</li>
-                </ul>
-            </div>
-
-        \\
+        ${getCardHtml()}
 
 
         </div>
@@ -193,26 +199,27 @@ async function run() {
 
 
 
-    for (let i in employeeArray) {
-        employee = employeeArray[i];
-        let cardInfo = {
-            name: employee.getName(),
-            role: employee.getRole(),
-            id: employee.getId(),
-            email: employee.getEmail()
-        }
+    /* for (let i in employeeArray) {
+         employee = employeeArray[i];
+         let cardInfo = {
+             name: employee.getName(),
+             role: employee.getRole(),
+             id: employee.getId(),
+             email: employee.getEmail()
+         }
+ 
+         if (employee.getRole() == "Engineer") {
+             cardInfo.github = employee.getGithub();
+         } else if (employee.getRole() == "Manager") {
+             cardInfo.officeNumber = employee.getOfficeNumber();
+         } else if (employee.getRole() == "Intern") {
+             cardInfo.school = employee.getSchool();
+         }
+ 
+         html += getCardHtml(cardInfo);
+     }*/
 
-        if (employee.getRole() == "Engineer") {
-            cardInfo.github = employee.getGithub();
-        } else if (employee.getRole() == "Manager") {
-            cardInfo.officeNumber = employee.getOfficeNumber();
-        } else if (employee.getRole() == "Intern") {
-            cardInfo.school = employee.getSchool();
-        }
-
-        html += getCardHtml(cardInfo);
-    }
-    // console.log(html);
+    console.log(html);
     const fs = require("fs");
     fs.writeFile('newfile.html', html, function (err) {
         if (err) throw err;
@@ -221,14 +228,4 @@ async function run() {
 }
 run()
 
-function getCardHtml(cardInfo) {
-    let html = "<div>";
-    // html += "<div>";
-    // html += cardInfo.name;
-    // html += "</div>";
-    // html += "<div>";
-    // html += cardInfo.github;
-    // html += "</div>";
-    // html += "</div>";
-    return html;
-}
+

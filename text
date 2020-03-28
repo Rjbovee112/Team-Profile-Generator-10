@@ -1,0 +1,15 @@
+<div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
+                <div class="col card-header">
+                    <h4>Robert</h4>
+                </div>
+    
+                <div class="col card-header">
+                    <h4>Manager</h4>
+                </div>
+    
+                <ul class="list-group list-group-flush text">
+                    <li class="list-group-item">ID: 1</li>
+                    <li class="list-group-item">Email: rjbovee112@gmail.com</li>
+                    <li class="list-group-item">Office Number: 1</li>
+                </ul>
+            </div>
