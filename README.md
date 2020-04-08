@@ -30,5 +30,5 @@ Once we where able to figure out how to connect the information to the employee 
 
 We where finally able to figure out passing test, passing information from the javascript into the employee cards and have everything work as needed.
 
-Please see the video of the working code.
+Please see the video of the working code that is located in the Assets folder.
 
