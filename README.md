@@ -32,3 +32,10 @@ We where finally able to figure out passing test, passing information from the j
 
 Please see the video of the working code that is located in the Assets folder.
 
+Instead of saying this, just put the picture in your readme like this:
+
+![SSH Instructions 6](./Assets/Untitled_%20Apr%207,%202020%208_06%20PM.gif "SSH Instructions 6")
+
+Kinda sucks to use URL encoded links, this is because your file name is stupid and has spaces in it. Try renaming your picture to something better and then the link will look nicer, like this:
+
+![SSH Instructions 6](./Assets/workingApp.gif "SSH Instructions 6")
