@@ -36,6 +36,5 @@ Please see the videos below
 
 ![SSH Instructions 6](./Assets/Untitled_%20Apr%207,%202020%208_06%20PM.gif "SSH Instructions 6")
 
-Kinda sucks to use URL encoded links, this is because your file name is stupid and has spaces in it. Try renaming your picture to something better and then the link will look nicer, like this:
 
 ![SSH Instructions 6](./Assets/workingApp.gif "SSH Instructions 6")
