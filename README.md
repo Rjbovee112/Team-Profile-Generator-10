@@ -30,9 +30,9 @@ Once we where able to figure out how to connect the information to the employee 
 
 We where finally able to figure out passing test, passing information from the javascript into the employee cards and have everything work as needed.
 
-Please see the video of the working code that is located in the Assets folder.
+Please see the videos below
 
-Instead of saying this, just put the picture in your readme like this:
+
 
 ![SSH Instructions 6](./Assets/Untitled_%20Apr%207,%202020%208_06%20PM.gif "SSH Instructions 6")
 
