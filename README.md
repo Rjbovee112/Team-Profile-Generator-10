@@ -102,6 +102,8 @@ I was about 80% done and started running into trouble with passing the informati
 *****
 ### FINISHED CODE
 
+This project was created by Robert Bovee with the help of a Tutor, the TAs, and Youtube.
+
 Please see the video below for the fully functioning assignment.
 
 
