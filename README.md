@@ -1,40 +1,111 @@
+TEAM PROFILE GENERATOR 
 
+In this homework assignment, your challenge is to build a Node CLI that takes in information about employees and generates an HTML webpage that displays summaries for each person. Since testing is a key piece in making code maintainable, you will also be ensuring that all unit tests pass.
+You will build a software engineering team generator command line application. The application will prompt the user for information about the team manager and then information about the team members. The user can input any number of team members, and they may be a mix of engineers and interns. This assignment must also pass all unit tests. When the user has completed building the team, the application will create an HTML file that displays a nicely formatted team roster based on the information provided by the user.
 
-This application allows you to create a table of employees, from manager to intern.  You are able to input information and be able to return a team of 4 and see all their information.
-
-The code passes all tests requied, and puts in all inputed information into a new html code that runs with the new information entered.
 
 *****
 
-This also passes all test, and fills in the employee cards with information given by the user.
+REQUIRED 
+
+### Classes
+The project must have the these classes: `Employee`, `Manager`, `Engineer`,
+`Intern`. The tests for these classes in the `tests` directory must all pass.
+
+The first class is an `Employee` parent class with the following properties and
+methods:
+
+  * name
+  * id
+  * title
+  * getName()
+  * getId()
+  * getEmail()
+  * getRole() // Returns 'Employee'
+
+The other three classes will extend `Employee`. 
+
+In addition to `Employee`'s properties and methods, `Manager` will also have:
+
+  * officeNumber
+
+  * getRole() // Overridden to return 'Manager'
+
+In addition to `Employee`'s properties and methods, `Engineer` will also have:
+
+  * github  // GitHub username
+
+  * getGithub()
+
+  * getRole() // Overridden to return 'Engineer'
+
+In addition to `Employee`'s properties and methods, `Intern` will also have:
+
+  * school 
+
+  * getSchool()
+
+  * getRole() // Overridden to return 'Intern'
+
+### User input
+
+The project must prompt the user to build an engineering team. An engineering
+team consists of a manager, and any number of engineers and interns.
+
+### Roster output
+
+The project must generate a `team.html` page in the `output` directory, that displays a nicely formatted team roster. Each team member should display the following in no particular order:
+
+  * Name
+
+  * Role
+
+  * ID
+
+  * Role-specific property (School, link to GitHub profile, or office number)
 
 *****
 
-Tech used 
+TECH USED 
 
 NPM
+
   -Dependencies
+
     *Jest
+
     *FS
+
     *Inquirer
+
     *RX
+
 HTML
+
 CSS
+
 JAVASCRIPT
 
+Runs as Node CLI
+
 *****
+WORKING ON THE PROJECT
 
-I was able to get pretty far, about 80% done.  I was not able to get the information passed into the employee cards, and used a tutor to help me in that area.
-
-Once we where able to figure out how to connect the information to the employee cards, we then ran into the problem of failed test runs.
-
-We where finally able to figure out passing test, passing information from the javascript into the employee cards and have everything work as needed.
-
-Please see the videos below
+This was an interesting homework, which pulled the front end and the back end together.  I enjoyed styling the layout and colors.
 
 
+As is required, the code passed testing and can put the information from the command line into the html with the workers information.
 
-![SSH Instructions 6](./Assets/Untitled_%20Apr%207,%202020%208_06%20PM.gif "SSH Instructions 6")
+*****
+PROBLEMS
+
+I was about to get about 80% done but ran into trouble with passing the information into the html page layout itself.  It would just generate added divs into the html.  I had to remove a good amount of code and redo the “push” so that it went into and created the required html page.  Once I was able to do that, I ran into the problem of passing all the test.  The generating html worked fine, with all the required information pulling up, but it failed all the test.  Lucky these where easy to fix, with small adjustments to the code and then it would pass the required testing.
+
+*****
+FINISH CODE
+
+Please see the video below for the fully functioning assignment.
+
 
 
 ![SSH Instructions 6](./Assets/workingApp.gif "SSH Instructions 6")
